@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title EKO UF
+    meta charset="utf-8"
+    link rel="stylesheet" type="text/css" href="ekouf.css"
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+    script type="text/javascript" src="dropdown_menu.js"
+  body
+    div#header
+      img#logga src="pictures/logga1.png" style="width:15%;margin-left:6.5%;"
+      img#slogan src="pictures/slogan.png" style="width:45%;margin-left:9%"
+    div#menu
+      ul class="menu"
+      a href="index.html" class="knapp"
+        img src="pictures/start.png"
+      ul class="hover"
+        li class="hoverli1"
+          img src="pictures/omoss.png" class="menu_class"
+          ul class="file_menu1"
+            li
+              a href="info.html" Information
+            li
+              a href="vision.html" Vision
+            li
+              a href="idea.html" Affärsidé
+            li
+              a href="background.html" Bakgrund
+      ul class="hover"
+        li class="hoverli2"
+          img src="pictures/prod.png" class="menu_class"
+          ul class="file_menu2"
+            li
+              a href="pinfo.html" Information
+            li
+              a href="order.html" Beställ
+            li
+              a href="statistics.html" Statistik
+      a href="tips.html" class="knapp"
+        img src="pictures/tips.png"
+      a href="miljo.html" class="knapp"
+        img src="pictures/miljo.png"
+      a href="contact.html" class="knapp"
+        img src="pictures/kontakt.png"
+    div#left
+    div.content
+      == yield
+    div#right
