@@ -172,4 +172,9 @@ ul, li {
 
 p {
     font-family: "Times New Roman";
+    font-size: 14pt;
+}
+
+.person p {
+    font-size: 12pt;
 }
